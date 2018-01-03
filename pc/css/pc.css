@@ -1,0 +1,467 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    /*overflow: hidden;*/
+}
+/*******************公共样式*******************************************/
+a{
+    text-decoration: none;
+    display: block;
+}
+ul{
+    list-style: none;
+}
+img{
+    display: block;
+}
+/*******************Wrap 容器*******************************************/
+.wrap{
+    height: 100%;
+    width: 100%;
+}
+/*******************Header 头部区域*******************************************/
+.header{
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0,0,0,.8);
+}
+/*******************Header 头部内容*******************************************/
+.headerContent{
+    width: 980px;
+    height: 100%;
+    margin: 0 auto;
+}
+.logo{
+    float: left;
+    margin: 16px 20px 0 0;
+}
+h1{
+    font: 14px 微软雅黑;
+}
+ul{
+    list-style: none;
+}
+.nav{
+    float: right;
+    height: 100%;
+}
+.nav>ul{
+    float: right;
+    height: 100%;
+    font: 14px 微端雅黑;
+}
+.nav>ul>li{
+    display: block;
+    height: 100%;
+    width: 90px;
+    text-align: center;
+    float: left;
+}
+.nav>ul>li>a{
+    text-decoration: none;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+}
+.headerContent li a:hover {
+    background-color: #fc0;
+    color: #000;
+}
+.nav>ul>.active{
+    background-color: #fc0;
+}
+.nav>ul>.active>a{
+    color: #000000;
+}
+
+/*******************Content 内容区*******************************************/
+.content{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+.content>.contentList{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.content>.rightBallList{
+    position: fixed;
+    top: 50%;
+    right: 1%;
+    z-index: 3;
+}
+.content>.rightBallList>li{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid;
+    margin-top: 10px;
+    cursor: pointer
+}
+.content>.rightBallList>.active{
+    background-color: #000000;
+    cursor: default;
+}
+
+/****************One***************************/
+.content>.contentList>.OneLi{
+    position: relative;
+    background: url("../img/s1.jpg") no-repeat;
+    background-position: 50% 50% !important;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+.content>.contentList section{
+    width: 980px;
+    height:100%;
+    position: absolute;
+    left: 0;
+    top:0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.content>.contentList>.OneLi>section>.One{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+.content>.contentList>.OneLi>section>.One>img{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    margin-left: -545px;
+    margin-top: -260px;
+}
+/****************Two**************************/
+.content>.contentList>.TwoLi{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-position: 50% 50% !important;
+    background:url("../img/s2.jpg") no-repeat;
+}
+.content>.contentList>.TwoLi>section>.Two{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+.content>.contentList>.TwoLi>section>.Two>.left{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -140px;
+    margin-top: 40px;
+}
+.content>.contentList>.TwoLi>section>.Two>.left>ul{
+    width: 100%;
+    height: 100%;
+}
+.content>.contentList>.TwoLi>section>.Two>.left>.photoList >li{
+    float: left;
+    margin-right: 20px;
+    text-align: center;
+}
+.content>.contentList>.TwoLi>section>.Two>.right{
+    position: absolute;
+    right: -15%;
+    margin-top: 5%;
+    padding-right: 15px;
+    border-right: 2px solid;
+}
+.content>.contentList>.TwoLi>section>.Two>.right>h1{
+     font-size: 34px;
+     color: #333;
+     font-weight: 100;
+     text-align: right;
+}
+.content>.contentList>.TwoLi>section>.Two>.right>p{
+     margin-top: 20px;
+     margin-bottom: 10px;
+     font-size: 18px;
+     color: #333;
+     text-align: right;
+}
+.content>.contentList>.TwoLi>section>.Two>.right>p{
+     margin-top: 20px;
+     margin-bottom: 10px;
+     font-size: 18px;
+     color: #333;
+     text-align: right;
+}
+.content>.contentList>.TwoLi>section>.Two>.right>a{
+    color: #333;
+    text-align: right;
+}
+.content>.contentList>.TwoLi>section>.Two>.bg{
+    position: absolute;
+    right: -193px;
+    bottom: 0;
+}
+.content>.contentList>.TwoLi>section>.Two>.left>.photoList >li>a{
+    margin-left: 80px;
+    width: 98px;
+    height: 30px;
+    background: url(../img/buy.jpg) no-repeat;
+    background-position: 50% 50%;
+    text-decoration: none;
+    display: block;
+}
+/****************Three**************************/
+.content>.contentList>.ThreeLi{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-position: 50% 50% !important;
+    background:url("../img/s3.jpg") no-repeat;
+}
+.content>.contentList>.ThreeLi>section>.Three{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+.content>.contentList>.ThreeLi>section>.Three>.left{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -140px;
+    margin-top: 40px;
+    z-index: 1;
+}
+.content>.contentList>.ThreeLi>section>.Three>.left>ul{
+    width: 100%;
+    height: 100%;
+}
+.content>.contentList>.ThreeLi>section>.Three>.left>.photoList >li{
+    float: left;
+    margin-right: 20px;
+    text-align: center;
+}
+.content>.contentList>.ThreeLi>section>.Three>.right{
+    position: absolute;
+    right: -15%;
+    margin-top: 5%;
+    padding-right: 15px;
+    border-right: 2px solid;
+}
+.content>.contentList>.ThreeLi>section>.Three>.right>h1{
+    font-size: 34px;
+    color: #333;
+    font-weight: 100;
+    text-align: right;
+}
+.content>.contentList>.ThreeLi>section>.Three>.right>p{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+    text-align: right;
+}
+.content>.contentList>.ThreeLi>section>.Three>.right>p{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+    text-align: right;
+}
+.content>.contentList>.ThreeLi>section>.Three>.right>a{
+    color: #333;
+    text-align: right;
+}
+.content>.contentList>.ThreeLi>section>.Three>.bg{
+    position: absolute;
+    right: -193px;
+    bottom: 0;
+}
+.content>.contentList>.ThreeLi>section>.Three>.left>.photoList >li>a{
+    margin-left: 80px;
+    width: 98px;
+    height: 30px;
+    background: url(../img/buy.jpg) no-repeat;
+    background-position: 50% 50%;
+    text-decoration: none;
+    display: block;
+}
+/****************Four**************************/
+.content>.contentList>.FourLi{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-position: 50% 50% !important;
+    background:url("../img/s4.jpg") no-repeat;
+}
+.content>.contentList>.FourLi>section>.Four{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+.content>.contentList>.FourLi>section>.Four>.left{
+    position: absolute;
+    left: -155px;
+    width: 1000px;
+    height: 437px;
+    margin-top: 40px;
+    z-index: 2;
+}
+.content>.contentList>.FourLi>section>.Four>.left>ul{
+    width: 100%;
+    height: 100%;
+}
+.content>.contentList>.FourLi>section>.Four>.left>.photoList >li{
+    float: left;
+    margin-right: 20px;
+    text-align: center;
+}
+.content>.contentList>.FourLi>section>.Four>.right{
+    position: absolute;
+    right: -15%;
+    margin-top: 5%;
+    padding-right: 15px;
+    border-right: 2px solid;
+}
+.content>.contentList>.FourLi>section>.Four>.right>h1{
+    font-size: 34px;
+    color: #333;
+    font-weight: 100;
+    text-align: right;
+}
+.content>.contentList>.FourLi>section>.Four>.right>p{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+    text-align: right;
+}
+.content>.contentList>.FourLi>section>.Four>.right>p{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+    text-align: right;
+}
+.content>.contentList>.FourLi>section>.Four>.right>a{
+    color: #333;
+    text-align: right;
+}
+.content>.contentList>.FourLi>section>.Four>.bg{
+    position: absolute;
+    right: -193px;
+    bottom: 0;
+    top: 210px;
+    z-index: 1;
+}
+.content>.contentList>.FourLi>section>.Four>.left>.photoList >li>a{
+    margin-left: 80px;
+    width: 98px;
+    height: 30px;
+    background: url(../img/buy.jpg) no-repeat;
+    background-position: 50% 50%;
+    text-decoration: none;
+    display: block;
+}
+/****************Five**************************/
+.content>.contentList>.FiveLi{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-position: 50% 50% !important;
+    background:url("../img/s2.jpg") no-repeat;
+}
+.content>.contentList>.FiveLi>section>.Five{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+.content>.contentList>.FiveLi>section>.Five>.left{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -140px;
+    margin-top: 40px;
+}
+.content>.contentList>.FiveLi>section>.Five>.left>ul{
+    width: 100%;
+    height: 100%;
+}
+.content>.contentList>.FiveLi>section>.Five>.left>.photoList >li{
+    float: left;
+    margin-right: 20px;
+    text-align: center;
+}
+.content>.contentList>.FiveLi>section>.Five>.right{
+    position: absolute;
+    right: -15%;
+    margin-top: 5%;
+    padding-right: 15px;
+    border-right: 2px solid;
+}
+.content>.contentList>.FiveLi>section>.Five>.right>h1{
+    font-size: 34px;
+    color: #333;
+    font-weight: 100;
+    text-align: right;
+}
+.content>.contentList>.FiveLi>section>.Five>.right>p{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+    text-align: right;
+}
+.content>.contentList>.FiveLi>section>.Five>.right>p{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+    text-align: right;
+}
+.content>.contentList>.FiveLi>section>.Five>.right>a{
+    color: #333;
+    text-align: right;
+}
+.content>.contentList>.FiveLi>section>.Five>.bg{
+    position: absolute;
+    right: -193px;
+    bottom: 0;
+    z-index: -1;
+}
+.content>.contentList>.FiveLi>section>.Five>.left>.photoList >li>a{
+    margin-left: 80px;
+    width: 98px;
+    height: 30px;
+    background: url(../img/buy.jpg) no-repeat;
+    background-position: 50% 50%;
+    text-decoration: none;
+    display: block;
+}
